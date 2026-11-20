@@ -1,0 +1,27 @@
+PController  L121  {fn: controllerMellinger, sp: setpoint}
+  PTiming  <top>  L135  {rate: ATTITUDE_RATE, tick: stabilizerStep, macro: RATE_DO_EXECUTE}
+    PModeBranch  <else>  L152
+      PModePred  <cond>  {op: ==, field: yaw, modeConst: modeVelocity}
+      PModeBranch  <elif>  L154
+        PModePred  <cond>  {op: ==, field: yaw, modeConst: modeAbs}
+        PModeBranch  <elif>  L156
+          PModePred  <cond>  {op: ==, field: quat, modeConst: modeAbs}
+    PModeBranch  <else>  L181
+      PModePred  <cond>  {op: &&}
+        PModePred  {op: &&}
+          PModePred  {op: ==, field: x, modeConst: modeAbs}
+          PModePred  {op: ==, field: y, modeConst: modeAbs}
+        PModePred  {op: ==, field: z, modeConst: modeAbs}
+      PModeBranch  <elif>  L204
+        PModePred  <cond>  {op: &&}
+          PModePred  {op: &&}
+            PModePred  {op: ==, field: pitch, modeConst: modeAbs}
+            PModePred  {op: ==, field: roll, modeConst: modeAbs}
+          PModePred  {op: ==, field: z, modeConst: modeDisable}
+        PModeBranch  <else>  L242
+          PModePred  <cond>  {op: ==, field: z, modeConst: modeDisable}
+    PContGuard  <else>  L273
+      PContPred  <cond>  {op: ==, lhs: self -> prev_omega_roll, rhs: self -> prev_omega_roll}
+    PContGuard  <else>  L306
+      PContPred  <cond>  {op: >, lhs: control -> thrust, rhs: 0}
+      PResetCall  <else>  L325  {fn: controllerMellingerReset}

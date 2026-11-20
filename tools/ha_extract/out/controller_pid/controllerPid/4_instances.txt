@@ -1,0 +1,31 @@
+PController  L79  {fn: controllerPid, sp: setpoint}
+  PReset  <top>  L81  {g: setpointModeChanged ( setpoint )}
+    PResetCall  <then>  L82  {fn: controllerPidReinitialize}
+  PTiming  <top>  L85  {rate: ATTITUDE_RATE, tick: stabilizerStep, macro: RATE_DO_EXECUTE}
+    PModeBranch  <then>  L87
+      PModePred  <cond>  {op: ==, field: yaw, modeConst: modeVelocity}
+      PContGuard  <then>  L91
+        PContPred  <cond>  {op: !=, lhs: yawMaxDelta, rhs: 0.0f}
+        PContGuard  <then>  L95
+          PContPred  <cond>  {op: >, lhs: delta, rhs: yawMaxDelta}
+          PContGuard  <elif>  L99
+            PContPred  <cond>  {op: <, lhs: delta, rhs: - yawMaxDelta}
+      PModeBranch  <elif>  L104
+        PModePred  <cond>  {op: ==, field: yaw, modeConst: modeAbs}
+        PModeBranch  <elif>  L106
+          PModePred  <cond>  {op: ==, field: quat, modeConst: modeAbs}
+  PTiming  <top>  L115  {rate: POSITION_RATE, tick: stabilizerStep, macro: RATE_DO_EXECUTE}
+  PTiming  <top>  L119  {rate: ATTITUDE_RATE, tick: stabilizerStep, macro: RATE_DO_EXECUTE}
+    PModeBranch  <then>  L121
+      PModePred  <cond>  {op: ==, field: z, modeConst: modeDisable}
+    PModeBranch  <then>  L124
+      PModePred  <cond>  {op: ||}
+        PModePred  {op: ==, field: x, modeConst: modeDisable}
+        PModePred  {op: ==, field: y, modeConst: modeDisable}
+    PModeBranch  <then>  L134
+      PModePred  <cond>  {op: ==, field: roll, modeConst: modeVelocity}
+    PModeBranch  <then>  L137
+      PModePred  <cond>  {op: ==, field: pitch, modeConst: modeVelocity}
+  PContGuard  <top>  L163
+    PContPred  <cond>  {op: ==, lhs: control -> thrust, rhs: 0}
+    PResetCall  <then>  L175  {fn: controllerPidReinitialize}

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ha_extract"
+version = "0.1.0"
+description = "Pattern-based hybrid-automaton extraction from Crazyflie firmware"
+requires-python = ">=3.10"
+dependencies = ["libclang>=18.1", "networkx>=3.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[tool.setuptools]
+packages = ["ha_extract"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

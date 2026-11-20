@@ -1,0 +1,959 @@
+[
+  {
+    "pattern": "PController",
+    "slot": null,
+    "line": 121,
+    "bindings": {},
+    "globals": {
+      "fn": "controllerMellinger",
+      "sp": "setpoint"
+    },
+    "nodes": [
+      {
+        "tag": "top",
+        "line": 121,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 122,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 123,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 124,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 125,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 126,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 127,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 128,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 129,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 130,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 131,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 133,
+        "kind": "stmt"
+      },
+      {
+        "tag": "top",
+        "line": 135,
+        "kind": "if"
+      }
+    ],
+    "children": [
+      {
+        "pattern": "PTiming",
+        "slot": "top",
+        "line": 135,
+        "bindings": {
+          "rate": "ATTITUDE_RATE",
+          "tick": "stabilizerStep",
+          "macro": "RATE_DO_EXECUTE"
+        },
+        "nodes": [
+          {
+            "tag": "if",
+            "line": 135,
+            "kind": "if"
+          },
+          {
+            "tag": "else",
+            "line": 139,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 142,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 143,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 144,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 145,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 146,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 147,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 148,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 152,
+            "kind": "if"
+          },
+          {
+            "tag": "else",
+            "line": 164,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 167,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 170,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 171,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 173,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 174,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 176,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 177,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 181,
+            "kind": "if"
+          },
+          {
+            "tag": "else",
+            "line": 251,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 252,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 253,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 254,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 255,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 256,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 257,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 260,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 263,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 264,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 266,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 267,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 268,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 270,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 271,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 272,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 273,
+            "kind": "if"
+          },
+          {
+            "tag": "else",
+            "line": 277,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 278,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 279,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 280,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 283,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 284,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 286,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 287,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 289,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 290,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 293,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 294,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 295,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 298,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 300,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 301,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 302,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 303,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 304,
+            "kind": "stmt"
+          },
+          {
+            "tag": "else",
+            "line": 306,
+            "kind": "if"
+          }
+        ],
+        "children": [
+          {
+            "pattern": "PModeBranch",
+            "slot": "else",
+            "line": 152,
+            "bindings": {},
+            "nodes": [
+              {
+                "tag": "if",
+                "line": 152,
+                "kind": "if"
+              },
+              {
+                "tag": "then",
+                "line": 153,
+                "kind": "stmt"
+              }
+            ],
+            "children": [
+              {
+                "pattern": "PModePred",
+                "slot": "cond",
+                "line": 0,
+                "bindings": {
+                  "op": "==",
+                  "field": "yaw",
+                  "modeConst": "modeVelocity"
+                },
+                "nodes": [],
+                "children": []
+              },
+              {
+                "pattern": "PModeBranch",
+                "slot": "elif",
+                "line": 154,
+                "bindings": {},
+                "nodes": [
+                  {
+                    "tag": "if",
+                    "line": 154,
+                    "kind": "if"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 155,
+                    "kind": "stmt"
+                  }
+                ],
+                "children": [
+                  {
+                    "pattern": "PModePred",
+                    "slot": "cond",
+                    "line": 0,
+                    "bindings": {
+                      "op": "==",
+                      "field": "yaw",
+                      "modeConst": "modeAbs"
+                    },
+                    "nodes": [],
+                    "children": []
+                  },
+                  {
+                    "pattern": "PModeBranch",
+                    "slot": "elif",
+                    "line": 156,
+                    "bindings": {},
+                    "nodes": [
+                      {
+                        "tag": "if",
+                        "line": 156,
+                        "kind": "if"
+                      },
+                      {
+                        "tag": "then",
+                        "line": 157,
+                        "kind": "stmt"
+                      },
+                      {
+                        "tag": "then",
+                        "line": 158,
+                        "kind": "stmt"
+                      },
+                      {
+                        "tag": "then",
+                        "line": 159,
+                        "kind": "stmt"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "pattern": "PModePred",
+                        "slot": "cond",
+                        "line": 0,
+                        "bindings": {
+                          "op": "==",
+                          "field": "quat",
+                          "modeConst": "modeAbs"
+                        },
+                        "nodes": [],
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "pattern": "PModeBranch",
+            "slot": "else",
+            "line": 181,
+            "bindings": {},
+            "nodes": [
+              {
+                "tag": "if",
+                "line": 181,
+                "kind": "if"
+              },
+              {
+                "tag": "then",
+                "line": 185,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 186,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 187,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 190,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 193,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 197,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 198,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 199,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 201,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 203,
+                "kind": "stmt"
+              }
+            ],
+            "children": [
+              {
+                "pattern": "PModePred",
+                "slot": "cond",
+                "line": 0,
+                "bindings": {
+                  "op": "&&"
+                },
+                "nodes": [],
+                "children": [
+                  {
+                    "pattern": "PModePred",
+                    "slot": null,
+                    "line": 0,
+                    "bindings": {
+                      "op": "&&"
+                    },
+                    "nodes": [],
+                    "children": [
+                      {
+                        "pattern": "PModePred",
+                        "slot": null,
+                        "line": 0,
+                        "bindings": {
+                          "op": "==",
+                          "field": "x",
+                          "modeConst": "modeAbs"
+                        },
+                        "nodes": [],
+                        "children": []
+                      },
+                      {
+                        "pattern": "PModePred",
+                        "slot": null,
+                        "line": 0,
+                        "bindings": {
+                          "op": "==",
+                          "field": "y",
+                          "modeConst": "modeAbs"
+                        },
+                        "nodes": [],
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "pattern": "PModePred",
+                    "slot": null,
+                    "line": 0,
+                    "bindings": {
+                      "op": "==",
+                      "field": "z",
+                      "modeConst": "modeAbs"
+                    },
+                    "nodes": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "pattern": "PModeBranch",
+                "slot": "elif",
+                "line": 204,
+                "bindings": {},
+                "nodes": [
+                  {
+                    "tag": "if",
+                    "line": 204,
+                    "kind": "if"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 208,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 209,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 210,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 212,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 213,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 214,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 216,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 217,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 218,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "then",
+                    "line": 220,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "else",
+                    "line": 225,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "else",
+                    "line": 226,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "else",
+                    "line": 227,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "else",
+                    "line": 230,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "else",
+                    "line": 234,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "else",
+                    "line": 235,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "else",
+                    "line": 236,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "else",
+                    "line": 238,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "else",
+                    "line": 240,
+                    "kind": "stmt"
+                  },
+                  {
+                    "tag": "else",
+                    "line": 242,
+                    "kind": "if"
+                  }
+                ],
+                "children": [
+                  {
+                    "pattern": "PModePred",
+                    "slot": "cond",
+                    "line": 0,
+                    "bindings": {
+                      "op": "&&"
+                    },
+                    "nodes": [],
+                    "children": [
+                      {
+                        "pattern": "PModePred",
+                        "slot": null,
+                        "line": 0,
+                        "bindings": {
+                          "op": "&&"
+                        },
+                        "nodes": [],
+                        "children": [
+                          {
+                            "pattern": "PModePred",
+                            "slot": null,
+                            "line": 0,
+                            "bindings": {
+                              "op": "==",
+                              "field": "pitch",
+                              "modeConst": "modeAbs"
+                            },
+                            "nodes": [],
+                            "children": []
+                          },
+                          {
+                            "pattern": "PModePred",
+                            "slot": null,
+                            "line": 0,
+                            "bindings": {
+                              "op": "==",
+                              "field": "roll",
+                              "modeConst": "modeAbs"
+                            },
+                            "nodes": [],
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "pattern": "PModePred",
+                        "slot": null,
+                        "line": 0,
+                        "bindings": {
+                          "op": "==",
+                          "field": "z",
+                          "modeConst": "modeDisable"
+                        },
+                        "nodes": [],
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "pattern": "PModeBranch",
+                    "slot": "else",
+                    "line": 242,
+                    "bindings": {},
+                    "nodes": [
+                      {
+                        "tag": "if",
+                        "line": 242,
+                        "kind": "if"
+                      },
+                      {
+                        "tag": "then",
+                        "line": 243,
+                        "kind": "stmt"
+                      },
+                      {
+                        "tag": "else",
+                        "line": 245,
+                        "kind": "stmt"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "pattern": "PModePred",
+                        "slot": "cond",
+                        "line": 0,
+                        "bindings": {
+                          "op": "==",
+                          "field": "z",
+                          "modeConst": "modeDisable"
+                        },
+                        "nodes": [],
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "pattern": "PContGuard",
+            "slot": "else",
+            "line": 273,
+            "bindings": {},
+            "nodes": [
+              {
+                "tag": "if",
+                "line": 273,
+                "kind": "if"
+              },
+              {
+                "tag": "then",
+                "line": 274,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 275,
+                "kind": "stmt"
+              }
+            ],
+            "children": [
+              {
+                "pattern": "PContPred",
+                "slot": "cond",
+                "line": 0,
+                "bindings": {
+                  "op": "==",
+                  "lhs": "self -> prev_omega_roll",
+                  "rhs": "self -> prev_omega_roll"
+                },
+                "nodes": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "pattern": "PContGuard",
+            "slot": "else",
+            "line": 306,
+            "bindings": {},
+            "nodes": [
+              {
+                "tag": "if",
+                "line": 306,
+                "kind": "if"
+              },
+              {
+                "tag": "then",
+                "line": 307,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 308,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 309,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 311,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 312,
+                "kind": "stmt"
+              },
+              {
+                "tag": "then",
+                "line": 313,
+                "kind": "stmt"
+              },
+              {
+                "tag": "else",
+                "line": 317,
+                "kind": "stmt"
+              },
+              {
+                "tag": "else",
+                "line": 318,
+                "kind": "stmt"
+              },
+              {
+                "tag": "else",
+                "line": 319,
+                "kind": "stmt"
+              },
+              {
+                "tag": "else",
+                "line": 321,
+                "kind": "stmt"
+              },
+              {
+                "tag": "else",
+                "line": 322,
+                "kind": "stmt"
+              },
+              {
+                "tag": "else",
+                "line": 323,
+                "kind": "stmt"
+              },
+              {
+                "tag": "else",
+                "line": 325,
+                "kind": "stmt"
+              }
+            ],
+            "children": [
+              {
+                "pattern": "PContPred",
+                "slot": "cond",
+                "line": 0,
+                "bindings": {
+                  "op": ">",
+                  "lhs": "control -> thrust",
+                  "rhs": "0"
+                },
+                "nodes": [],
+                "children": []
+              },
+              {
+                "pattern": "PResetCall",
+                "slot": "else",
+                "line": 325,
+                "bindings": {
+                  "fn": "controllerMellingerReset"
+                },
+                "nodes": [
+                  {
+                    "tag": "stmt",
+                    "line": 325,
+                    "kind": "stmt"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
